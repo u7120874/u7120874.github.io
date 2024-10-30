@@ -19,8 +19,8 @@
             text-align: center;
             margin-top: 50px;
         }
-        img {
-            width: 900px; /* Adjust width as needed */
+        header img {
+            width: 900px; /* Updated width */
             height: auto; /* Maintain the aspect ratio */
         }
         h1 {
@@ -42,23 +42,28 @@
         .about-section {
             display: flex;
             align-items: flex-start;
-            justify-content: center;
-            max-width: 800px;
+            justify-content: flex-start;
+            max-width: 1200px; /* Increased width for the section */
             padding: 20px;
             text-align: left;
         }
         .about-section figure {
             margin: 0;
             margin-right: 20px;
+            flex-shrink: 0;
         }
         .about-section img {
-            width: 700px;
+            width: 700px; /* Updated width for JWST image */
+            height: auto;
         }
         figcaption {
             font-size: 0.8em;
             color: #bbbbbb;
             text-align: center;
             margin-top: 5px;
+        }
+        .about-content {
+            flex: 1; /* Allow the content to take up the remaining space */
         }
         .about-content h3 {
             font-size: 1.8em;
@@ -71,7 +76,7 @@
         }
         .orcid-button {
             display: inline-block;
-            background-color: #ffdd57;
+            background-color: #A6CE39; /* ORCID green */
             color: #001f3f;
             padding: 10px 20px;
             margin-top: 20px;
@@ -80,6 +85,9 @@
             font-weight: bold;
             border-radius: 5px;
             cursor: pointer;
+        }
+        .orcid-button:hover {
+            background-color: #8dbd32; /* Darker green for hover effect */
         }
     </style>
 </head>
