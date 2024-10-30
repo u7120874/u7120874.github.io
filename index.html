@@ -20,7 +20,7 @@
             margin-top: 50px;
         }
         img {
-            width: 500; /* Set a larger width */
+            width: 450px; /* Adjust width as needed */
             height: auto; /* Maintain the aspect ratio */
         }
         h1 {
@@ -33,6 +33,54 @@
             color: #bbbbbb; /* Light gray for subtitle */
             margin: 5px 0 20px;
         }
+        .divider {
+            width: 80%;
+            height: 2px;
+            background-color: #444;
+            margin: 30px 0;
+        }
+        .about-section {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            max-width: 800px;
+            padding: 20px;
+            text-align: left;
+        }
+        .about-section figure {
+            margin: 0;
+            margin-right: 20px;
+        }
+        .about-section img {
+            width: 200px;
+        }
+        figcaption {
+            font-size: 0.8em;
+            color: #bbbbbb;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .about-content h3 {
+            font-size: 1.8em;
+            color: #ffdd57;
+            margin-bottom: 10px;
+        }
+        .about-content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .orcid-button {
+            display: inline-block;
+            background-color: #ffdd57;
+            color: #001f3f;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -42,6 +90,25 @@
     <h1>Lewis Miller</h1>
     <h2>Australian Astrophysicist and Star-Formation Specialist</h2>
 </header>
+
+<div class="divider"></div>
+
+<section class="about-section">
+    <figure>
+        <img src="JWST_img.jpg" alt="JWST Image">
+        <figcaption>JWST image; "A Spiral Amongst Thousands", all credit to ESA/Webb, NASA & CSA, A. Martel, 2023</figcaption>
+    </figure>
+    <div class="about-content">
+        <h3>Who, me?</h3>
+        <p>Hi!!</p>
+        <p>My name's Lewis!! I am an astrophysics nerd studying my PhD in Astronomy and Astrophysics at the Australian National University (ANU).</p>
+        <p>I did my undergraduate here at ANU as well, doing a Bachelor of Science (Adv, Honours) majoring in Astrophysics, specializing in Advanced Physics, and with a Minor in Mathematics. I also received first class honours in Astrophysics.</p>
+        <p>My research mainly focuses on star formation and turbulence in the interstellar medium (ISM). Please check out my ORCID link below for my work!!</p>
+        <p>I am also involved in teaching physics and astrophysics through ANU - I tutor first-year physics and honours-level astronomical computing, and have taught first-year physics at Shandong University, in Weihai, China.</p>
+        <p>I am incredibly privileged to work and live on the land belonging to the traditional custodians, the Ngunnawal people, and pay respects to the elders past, present, and emerging as well as their contributions to our community, science, and research.</p>
+        <a href="https://orcid.org/0009-0008-8732-8506" class="orcid-button">Visit My ORCID Profile</a>
+    </div>
+</section>
 
 </body>
 </html>
